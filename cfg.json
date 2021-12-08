@@ -1,0 +1,19 @@
+{
+    "debug":true,
+    "loglevel": "debug",
+    "logfile": "/apps/logs/etcdpool/app.log"
+    "role": "",   // "client" ||  "server"
+    "testline": 60000,
+    "http": {
+        "enabled": true,
+        "listen": "0.0.0.0:7071"
+    },
+    "etcdconfig": {
+        "host": ["h1:port","h2:port","h3:port"]
+    },
+    "etcdssl":{
+        "cafile": "ca.pem",
+        "certfile": "etcd.pem",
+        "keyfile": "etcd-key.pem"
+    }
+}
